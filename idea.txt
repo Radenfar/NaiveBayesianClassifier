@@ -1,0 +1,4 @@
+1. Build a base model that is super simple - the bare bones of Naive Bayes. This will be a good starting point to build off of.
+    > This simple model will only consider individual words, with absolutely no context or enhancements to the model.
+
+2. Test!
