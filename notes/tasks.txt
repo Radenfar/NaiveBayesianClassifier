@@ -1,0 +1,7 @@
+The report section should...
+explain and motivate the chosen representation & data preprocessing,
+explain the idea behind the model improvements and their implementation (including the implementation of the standard Naive Bayes)
+explain the evaluation procedure (e.g., cross-validation or training/validation split)
+include and explain the training/validation results for the standard and improved Naive Bayes model. You can summarize results using tables (or plots), but all results have to be explained descriptively as well.
+be written in plain English and should not be longer than two A4 pages (export the notebook as pdf to see if the report section fits in two pages).
+
