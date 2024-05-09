@@ -1,0 +1,32 @@
+Eliminating words saw an immediate increase in the prediction rate of the model from 0.8 to 0.9.
+This was shown in the following results:
+Stop word %
+Top 1% = 0.8815 (296)
+Top 2% = 0.893 (592)
+Top 3% = 0.898 (888)
+Top 4% = 0.902 (1185)
+Top 5% = 0.8975 (1481)
+Top 6% = 0.888 (1777)
+Therefore, it seems that, for this data set, an elimination rate of the top 4% of most common words was found.
+This could also change based on the split of the validation set.
+These results were for a 50/50 split, but lower the split to 80% train, 20% test and we get:
+Top 2% = 0.89875
+Top 3% = 0.90875
+Top 4% = 0.9075
+Top 5% = 0.90375
+Top 6% = 0.90125
+This shows some slight deviations. Overall it shows that with more training I was achieving better results, which is if anything - a good sign.
+On the other hand these results seem to suggest that the amount of most common words eliminated and the size of the training data are independent on the accuracy of the validation set.
+
+Distribution original (0.8):
+- E = 755
+- B = 245
+- A = 1
+- V = 0
+
+Distribution new (0.1, 0.2, 0.3, 0.4, 0.5):
+- E = 691, 632, 491, 356, 249
+- B = 300, 259, 173, 132, 91
+- A = 8, 94, 272, 398, 520
+- V = 1, 15, 64, 111, 140
+Num_Elim = 301, 602, 903, 1204, 1506

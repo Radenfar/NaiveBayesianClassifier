@@ -1,0 +1,24 @@
+Missions for today:
+361:
+- get model above the 0.88 threshold
+- yap about the techniques used
+- clean up the code and the notebook as a whole
+- check against the assignment criteria
+
+
+351:
+- get the first half done (the codey stuff)
+
+
+
+Tomorrow:
+- finish 351 and the lab
+- start 369, plan for weekend 
+
+
+Next week :
+- plan out entire of rest of semester including:
+	- exam times
+	- how many lectures I need to watch
+	- swimming training / competitions
+	- assignments / deadlines
