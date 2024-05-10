@@ -1,7 +1,32 @@
 The report section should...
+
 explain and motivate the chosen representation & data preprocessing,
+- big focus on working with 0 imports, ie, doing all from scratch (with the exception of the random module)
+- focused on using an OOP approach to prioritise readability over performance, including custom data structures 
+- reason out the classes
+
 explain the idea behind the model improvements and their implementation (including the implementation of the standard Naive Bayes)
+- explain the base model
+- dirichlet smoothing
+- partitioning of the data set
+- use of ensemble 
+- inclusion of a moderator (talk about ensuring golden rule and difference between overlapping and non-overlapping training data)
+
 explain the evaluation procedure (e.g., cross-validation or training/validation split)
+- used a training validation split, additionally made the naive bayesian objects able to have their data posteriorly set so that data can be separated for ensembles
+- additionally, randomised the training data on parameters and used multiple iterations (10) of a training-validation cycle to test (see if this has a name and if there is any literature on it)
+
+
 include and explain the training/validation results for the standard and improved Naive Bayes model. You can summarize results using tables (or plots), but all results have to be explained descriptively as well.
+- include the data on alpha values, partitions
+
 be written in plain English and should not be longer than two A4 pages (export the notebook as pdf to see if the report section fits in two pages).
 
+IN GENERAL:
+- Try to include as many references to genuine techniques and literature to make it seem like I was searching through literature like plato before writing a single line of code.
+
+
+I have designed a machine learning model for a friend that has a high accuracy. For this model, I did lots of testing and decided on going with an ensemble design. While searching for an improvement to my ensemble I realised that I can increase my performance by including what I call a 'moerator model'.
+I split the data into about 2/3 ensemble (split over many smaller models) and 1/3 for just one moderator model. Then, whenever there was a tie in the class output, or more than 3 unique classes were suggested by the ensemble, the moderator model would step in and make the decision.
+Using this technique improved my accuracy by as much as 20%, although I am unsure if there is a proper name and science behind doing this.
+Is this a practice known in machine learning? If so, what is some proper terminology I should use to refer to this practice in my report?
